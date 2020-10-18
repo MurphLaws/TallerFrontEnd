@@ -4,11 +4,12 @@
   "description": "Diseño de un CRUD con interfaz",
   "main": "connection.js",
   "dependencies": {
+    "express": "^4.17.1",
     "pg": "^8.4.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "start"
+    "start": "node connection.js"
   },
   "author": "",
   "license": "ISC"
