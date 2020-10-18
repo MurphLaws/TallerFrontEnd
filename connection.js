@@ -13,7 +13,8 @@ const client = new Client({
   });
 client.connect();
 
-console.log("HOLA MUNDO")
+app.use(express.static("public"));
+
 
 
 const PORT = 3000;
