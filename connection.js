@@ -3,6 +3,8 @@ const { Client } = require('pg');
 var express = require('express');
 
 const app = express();
+
+
 app.use(express.urlencoded({ extended: true }))
 const client = new Client({
     user: 'xbnwykzk',
@@ -13,7 +15,19 @@ const client = new Client({
   });
 client.connect();
 
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public/")); 
+
+
+app.post('/add',
+ (req, res) => {
+    client.query('INSERT INTO pacientes (id, nombre, numid) VALUES(DEFAULT, $1, $2)', [req.body.n, req.body.numid],
+            (e, r) => {
+              console.log(e);
+              res.send('OK'); });
+    }
+);
+
+
 
 
 
