@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
+<div class="All">
 <body>
-    <h2>CRUD</h2>
+    <h1>CRUD</h1>
 
+   
     
-    <form action="http://localhost:3000/add" method="post" id="formulario">
+    <head>
+      <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+
+<!------------------------------------------------------------------------------------------------>
+<!-------------------------------------------ADD-------------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<br>
+<br>
+    <form  class="crear" action="http://localhost:3000/add" method="post" id="formulario">
       <br>
-      <div id="Id">
-          <label for="fname">Id:</label><br>
-          <input type="text" id="i" name="i"><br>
-      </div>
+      <h2>Crear</h2>
+  
       
-      <div id="Nombre">
+
+      <div id="nombre">
           <label for="lname">Nombre:</label><br>
           <input type="text" id="n" name="n"><br>
       </div>
-
-
 
     <div id="numid">
       <label for="lname">numid:</label><br>
@@ -26,7 +35,88 @@
       <input type="submit" value="Crear">
   </form>
 
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------------UPDATE------------------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<br>
+<br>
+  <form  class="actualizar" action="http://localhost:3000/update" method="post" id="formulario">
+    <br>
+    <h2>Actualizar</h2>
+    
 
+    <div id="id">
+      <label for="lname">Id:</label><br>
+      <input type="number" id="i" name="i"><br>
+  </div>
+
+
+    <div id="nombre">
+        <label for="lname">Nombre:</label><br>
+        <input type="text" id="n" name="n"><br>
+    </div>
+
+  <div id="numid">
+    <label for="lname">numid:</label><br>
+    <input type="text" id="numid" name="numid"><br>
+</div>
+    <br>
+    <input type="submit" value="Actualizar">
+</form>
+
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------------READ-------------------------------------------------->
+<!------------------------------------------------------------------------------------------------>
+<br>
+<br>
+<form  class="leer" action="http://localhost:3000/read" method="post" id="formulario">
+  <br>
+  <h2>Leer</h2>
+  
+
+  <div id="id">
+    <label for="lname">Id:</label><br>
+    <input type="number" id="i" name="i"><br>
+</div>
+  <br>
+  <input type="submit" value="Leer">
+</form>
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------------DELETE------------------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<br>
+<br>
+<form  class="leer" action="http://localhost:3000/delete" method="post" id="formulario">
+  <br>
+  <h2>Borrar</h2>
+  
+
+  <div id="id">
+    <label for="lname">Id:</label><br>
+    <input type="number" id="i" name="i"><br>
+</div>
+  <br>
+  <input type="submit" value="Borrar">
+</form>
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------>
+<!------------------------------------------DELETE------------------------------------------------>
+<!------------------------------------------------------------------------------------------------>
+<br>
+<br>
+<form  class="leer" action="http://localhost:3000/total" method="post" id="formulario">
+  <br>
+  <h2>Consulta Total</h2>
+  <br>
+  <input type="submit" value="Consultar">
+</form>
 
 </body>
+</div>  
 </html>
