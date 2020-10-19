@@ -20,7 +20,8 @@ input {
 	outline: none;
 	height: 60px;
 	line-height: 60px;
-	border-radius: 4px;
+    border-radius: 4px;
+    font-size: 30px;
 }
 
 
