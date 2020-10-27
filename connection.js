@@ -7,10 +7,10 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }))
 const client = new Client({
-    user: process.env.DB_HOST,
-    host: process.env.DB_USER,
-    database: process.env.DB_PASS,
-    password: '',
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_USER,
+    password: process.env.DB_PASS,
     port: 5432,
   });
 client.connect();
