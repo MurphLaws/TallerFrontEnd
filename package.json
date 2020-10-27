@@ -4,8 +4,10 @@
   "description": "Diseño de un CRUD con interfaz",
   "main": "connection.js",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "pg": "^8.4.1"
+    "pg": "^8.4.1",
+    "vue": "^2.6.12"
   },
   "devDependencies": {},
   "scripts": {

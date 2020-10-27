@@ -1,16 +1,16 @@
 
 const { Client } = require('pg');
 var express = require('express');
-
+require('dotenv').config();
 const app = express();
 
 
 app.use(express.urlencoded({ extended: true }))
 const client = new Client({
-    user: 'xbnwykzk',
-    host: 'salt.db.elephantsql.com',
-    database: 'xbnwykzk',
-    password: 'dWHaA9Hy9Gt0dgmScmXHaJFeJ5A_-0UN',
+    user: process.env.DB_HOST,
+    host: process.env.DB_USER,
+    database: process.env.DB_PASS,
+    password: '',
     port: 5432,
   });
 client.connect();
